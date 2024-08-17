@@ -6,7 +6,7 @@
 .nl1 .nav-link {
     color: white;
     filter: brightness(90%);
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .nav-link:hover {
@@ -419,7 +419,7 @@ body {
     gap: 8px;
 }
 
-.socials > img {
+.socials > a > img {
     width: 20px;
     filter: grayscale(100%);
     opacity: 0.75; 

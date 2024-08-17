@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JetSetGo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 container-fluid top">
+    <div class="dropdown">
+      <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="images/logo.png" width="32" height="32">
+        <use xlink:href="#bootstrap"></use></svg>
+      </a>
+    </div>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nl1">
+      <li><a href="#" class="nav-link px-3">Home</a></li>
+      <li><a href="#" class="nav-link px-3">Booking</a></li>
+      <li><a href="#" class="nav-link px-3">AI Trip Planner</a></li>
+      <li><a href="#" class="nav-link px-3">Wishlist</a></li>
+    </ul>
+
+    <div class="flex-shrink-0 dropdown">
+      <a href="#" class="d-block link-body-emphasis text-decoration-none" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <img src="images/dp.png" alt="profile-img" width="38" height="38" class="rounded-circle">
+      </a>
+      <ul class="dropdown-menu text-small shadow">
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="book text-center pt-5">
+    <h1 class="display-5 fw-bold your">Your Ultimate Travel Companion for<br>Seamless Adventures</h1>
+    <div class="container pt-5">
+      <div class="row p-3 align-items-center rounded-3 shadow-lg book-card">
+        <div class="pt-lg-3">
+          <div class="white col-lg-8 col-12 col-md-10">
+            <div class="flight type">
+              <div class="image-container"><img src="images/type/flight blue.svg" alt="" class="imgc"></div>
+              <div class="textc">Flight</div>
+            </div>
+            <div class="holiday type">
+              <div class="image-container"><img src="images/type/surf blue.svg" alt="" class="imgc"></div>
+              <div class="textc">Holiday<br>Package</div>
+            </div>
+            <div class="trains type">
+              <div class="image-container"><img src="images/type/train blue.svg" alt="" class="imgc"></div>
+              <div class="textc">Trains</div>
+            </div>
+            <div class="aitrip type">
+              <div class="image-container"><img src="images/type/path blue.svg" alt="" class="imgc"></div>
+              <div class="textc">AI Trip<br>Planner</div>
+            </div>
+            <div class="bus type">
+              <div class="image-container"><img src="images/type/bus blue.svg" alt="" class="imgc"></div>
+              <div class="textc">Buses</div>
+            </div>
+            <div class="cab type">
+              <div class="image-container"><img src="images/type/cab blue.svg" alt="" class="imgc"></div>
+              <div class="textc">Cabs</div>
+            </div>
+            <div class="hotels type">
+              <div class="image-container"><img src="images/type/hotel blue.svg" alt="" class="imgc"></div>
+              <div class="textc">Hotels</div>
+            </div>
+
+          </div>
+          <div class="radiogroup">
+            <input type="radio" name="city" value="one"> <label>One Way</label>
+            <input type="radio" name="city" value="multi"> <label>Multi City</label>
+          </div>
+          <div class="selection">
+            <!--<div class="fromto">-->
+            <div class="from col-md-5 col-lg-2">
+              <p class="mini">From</p>
+              <p class="loc">Delhi </p>
+              <p class="mini airport">DEL, Delhi Airport India </p>
+            </div>
+            <div class="vr"></div>
+            <div class="to col-md-6 col-lg-2">
+              <p class="mini">To</p>
+              <p class="loc">Mumbai </p>
+              <p class="mini airport">BOM, Chhatrapati Shivaji Maharaj International Airport India </p>
+            </div>
+            <div class="vr"></div>
+            <!--</div>-->
+            <!--<div class="depret">-->
+            <div class="dep">
+              <p class="mini">Departure</p>
+              <div class="date"><span class="loc">19</span>
+                <span class="my">Jul'24</span>
+              </div>
+
+              <p class="mini day">Friday </p>
+            </div>
+            <div class="vr"></div>
+            <div class="ret">
+              <p class="mini">Return</p>
+              <div class="date"><span class="loc">26</span>
+                <span class="my">Jul'24</span>
+              </div>
+              <p class="mini day">Thursday </p>
+            </div>
+            <div class="vr"></div>
+            <div class="trav">
+              <p class="mini">Traveller & Class</p>
+              <div class="date"><span class="loc">1</span>
+                <span class="my">Traveller</span>
+              </div>
+              <p class="mini day">Economy / Premium Economy </p>
+            </div>
+            <!--</div>-->
+          </div>
+          <div class="specialfare">
+            <div class="sel pb-3"><strong>Select a special fare</strong></div>
+            <div class="fare1 pb-4">
+
+              <div class="fare01">
+                <div class="fare11">
+                  <div class="fare111"><input type="radio" name="fare" id=""></div>
+                  <div class="fare112"></div>
+                </div>
+                <div class="fare12">
+                  <div class="fare121"><strong>Regular</strong></div>
+                  <div class="fare122 mini">Regular fares</div>
+                </div>
+                <div class="vr2"></div>
+              </div>
+
+              <div class="fare01">
+                <div class="fare11">
+                  <div class="fare111"><input type="radio" name="fare" id=""></div>
+                  <div class="fare112"></div>
+                </div>
+                <div class="fare12">
+                  <div class="fare121"><strong>Doctors and Nurses</strong></div>
+                  <div class="fare122 mini">up to ₹600 off</div>
+                </div>
+                <div class="vr2"></div>
+              </div>
+
+              <div class="fare01">
+                <div class="fare11">
+                  <div class="fare111"><input type="radio" name="fare" id=""></div>
+                  <div class="fare112"></div>
+                </div>
+                <div class="fare12">
+                  <div class="fare121"><strong>Armed Forces</strong></div>
+                  <div class="fare122 mini">up to ₹600 off</div>
+                </div>
+                <div class="vr2"></div>
+              </div>
+
+              <div class="fare01">
+                <div class="fare11">
+                  <div class="fare111"><input type="radio" name="fare" id=""></div>
+                  <div class="fare112"></div>
+                </div>
+                <div class="fare12">
+                  <div class="fare121"><strong>Students</strong></div>
+                  <div class="fare122 mini">Extra discounts/baggage</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="picks">
+
+    <div class="container py-4">
+      <h2 class="display-5 fw-bold heading">Top picks for you</h2>
+      <div class="py-4">
+
+        <div class="card-container">
+          <div class="card">
+            <img class="card-img1" src="images/top-picks/rishikesh.jpg" alt="Card image cap">
+            <div class="card-body">
+              <div class="line">
+                <div class="part1">
+                  <h5 class="card-title">Rishikesh,</h5>
+                  <p class="state"> Uttarakhand</p>
+                </div>
+                <div class="part2">♡ ➤</div>
+              </div>
+              <div class="line">
+                <p class="card-text">Rating: 4/5</p>
+                <p>★★★★☆</p>
+              </div>
+              <hr>
+              <div class="line2mother">
+                <div class="line2 line2p1">
+                  <div class="blob">
+                    <div class="emoji inblob">
+                      <div class="circle">📅</div>
+                    </div>
+                    <div class="duration inblob">
+                      <p>Duration</p>
+                      <strong>3 nights</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="line2 line2p2">
+                  <div class="blob">
+                    <div class="emoji inblob">
+                      <div class="circle"> 👥</div>
+                    </div>
+                    <div class="duration inblob">
+                      <p>Per Day</p>
+                      <strong>Pay Per Person</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="line3mother">
+                <div class="line3 price">
+                  <p class="state">From
+                  <h5 class="card-title">₹15,999</h5>
+                  <p class="state">/person</p>
+                  <div class="outstate state"><br>Includes extra ₹2,083 discount <br> For packages with flights</div>
+                </div>
+                <div class="line3 blob booknow">
+                  <h4>Book Now</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img1" src="images/top-picks/leh.jpg" alt="Card image cap">
+            <div class="card-body">
+              <div class="line">
+                <div class="part1">
+                  <h5 class="card-title">Leh-Ladakh,</h5>
+                  <p class="state"> Jammu and Kashmir</p>
+                </div>
+                <div class="part2">♡ ➤</div>
+              </div>
+              <div class="line">
+                <p class="card-text">Rating: 4/5</p>
+                <p>★★★★☆</p>
+              </div>
+              <hr>
+              <div class="line2mother">
+                <div class="line2 line2p1">
+                  <div class="blob">
+                    <div class="emoji inblob">
+                      <div class="circle">📅</div>
+                    </div>
+                    <div class="duration inblob">
+                      <p>Duration</p>
+                      <strong>3 nights</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="line2 line2p2">
+                  <div class="blob">
+                    <div class="emoji inblob">
+                      <div class="circle"> 👥</div>
+                    </div>
+                    <div class="duration inblob">
+                      <p>Per Day</p>
+                      <strong>Pay Per Person</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="line3mother">
+                <div class="line3 price">
+                  <p class="state">From
+                  <h5 class="card-title">₹15,999</h5>
+                  <p class="state">/person</p>
+                  <div class="outstate state"><br>Includes extra ₹2,083 discount <br> For packages with flights</div>
+                </div>
+                <div class="line3 blob booknow">
+                  <h4>Book Now</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img1" src="images/top-picks/manali.webp" alt="Card image cap">
+            <div class="card-body">
+              <div class="line">
+                <div class="part1">
+                  <h5 class="card-title">Manali,</h5>
+                  <p class="state"> Himachal Pradesh</p>
+                </div>
+                <div class="part2">♡ ➤</div>
+              </div>
+              <div class="line">
+                <p class="card-text">Rating: 4/5</p>
+                <p>★★★★☆</p>
+              </div>
+              <hr>
+              <div class="line2mother">
+                <div class="line2 line2p1">
+                  <div class="blob">
+                    <div class="emoji inblob">
+                      <div class="circle">📅</div>
+                    </div>
+                    <div class="duration inblob">
+                      <p>Duration</p>
+                      <strong>3 nights</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="line2 line2p2">
+                  <div class="blob">
+                    <div class="emoji inblob">
+                      <div class="circle"> 👥</div>
+                    </div>
+                    <div class="duration inblob">
+                      <p>Per Day</p>
+                      <strong>Pay Per Person</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="line3mother">
+                <div class="line3 price">
+                  <p class="state">From
+                  <h5 class="card-title">₹15,999</h5>
+                  <p class="state">/person</p>
+                  <div class="outstate state"><br>Includes extra ₹2,083 discount <br> For packages with flights</div>
+                </div>
+                <div class="line3 blob booknow">
+                  <h4>Book Now</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img1" src="images/top-picks/goa.webp" alt="Card image cap">
+            <div class="card-body">
+              <div class="line">
+                <div class="part1">
+                  <h5 class="card-title">Goa</h5>
+                  <p class="state"> </p>
+                </div>
+                <div class="part2">♡ ➤</div>
+              </div>
+              <div class="line">
+                <p class="card-text">Rating: 4/5</p>
+                <p>★★★★☆</p>
+              </div>
+              <hr>
+              <div class="line2mother">
+                <div class="line2 line2p1">
+                  <div class="blob">
+                    <div class="emoji inblob">
+                      <div class="circle">📅</div>
+                    </div>
+                    <div class="duration inblob">
+                      <p>Duration</p>
+                      <strong>3 nights</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="line2 line2p2">
+                  <div class="blob">
+                    <div class="emoji inblob">
+                      <div class="circle"> 👥</div>
+                    </div>
+                    <div class="duration inblob">
+                      <p>Per Day</p>
+                      <strong>Pay Per Person</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="line3mother">
+                <div class="line3 price">
+                  <p class="state">From
+                  <h5 class="card-title">₹15,999</h5>
+                  <p class="state">/person</p>
+                  <div class="outstate state"><br>Includes extra ₹2,083 discount <br> For packages with flights</div>
+                </div>
+                <div class="line3 blob booknow">
+                  <h4>Book Now</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img1" src="images/top-picks/auli.jpg" alt="Card image cap">
+            <div class="card-body">
+              <div class="line">
+                <div class="part1">
+                  <h5 class="card-title">Auli,</h5>
+                  <p class="state"> Uttarakhand</p>
+                </div>
+                <div class="part2">♡ ➤</div>
+              </div>
+              <div class="line">
+                <p class="card-text">Rating: 4/5</p>
+                <p>★★★★☆</p>
+              </div>
+              <hr>
+              <div class="line2mother">
+                <div class="line2 line2p1">
+                  <div class="blob">
+                    <div class="emoji inblob">
+                      <div class="circle">📅</div>
+                    </div>
+                    <div class="duration inblob">
+                      <p>Duration</p>
+                      <strong>3 nights</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="line2 line2p2">
+                  <div class="blob">
+                    <div class="emoji inblob">
+                      <div class="circle"> 👥</div>
+                    </div>
+                    <div class="duration inblob">
+                      <p>Per Day</p>
+                      <strong>Pay Per Person</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="line3mother">
+                <div class="line3 price">
+                  <p class="state">From
+                  <h5 class="card-title">₹15,999</h5>
+                  <p class="state">/person</p>
+                  <div class="outstate state"><br>Includes extra ₹2,083 discount <br> For packages with flights</div>
+                </div>
+                <div class="line3 blob booknow">
+                  <h4>Book Now</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <div class="container">
+    <hr>
+  </div>
+
+  <section class="ultimate py-4">
+    <div class="container">
+      <h2 class="display-5 fw-bold heading pb-4">Ultimate Travel Spots</h2>
+      <div class="mycard pb-4">
+
+        <div class="indcard">
+          <img src="images/travel spots/bali.webp" alt="">
+          <div class="gradient"></div>
+          <div class="ultloc">
+            <strong>Blissful Bali</strong>
+            <p class="mini">⭐ 4.2</p>
+          </div>
+        </div>
+
+        <div class="indcard">
+          <img src="images/travel spots/kilimanjaro.webp" alt="">
+          <div class="gradient"></div>
+          <div class="ultloc">
+            <strong>Majestic <br> Kilimanjaro</strong>
+            <p class="mini">⭐ 4.7</p>
+          </div>
+        </div>
+
+        <div class="indcard">
+          <img src="images/travel spots/greatbarrier.jpg" alt="">
+          <div class="gradient"></div>
+          <div class="ultloc">
+            <strong>Glorious <br> Great Barrier Reef</strong>
+            <p class="mini">⭐ 4.9</p>
+          </div>
+        </div>
+
+        <div class="indcard">
+          <img src="images/travel spots/hawaai.jpg" alt="">
+          <div class="gradient"></div>
+          <div class="ultloc">
+            <strong>Heavenly Hawaai</strong>
+            <p class="mini">⭐ 4.6</p>
+          </div>
+        </div>
+
+        <div class="indcard">
+          <img src="images/travel spots/machu.avif" alt="">
+          <div class="gradient"></div>
+          <div class="ultloc">
+            <strong>Mystical <br> Machu Pichu</strong>
+            <p class="mini">⭐ 4.7</p>
+          </div>
+        </div>
+
+        <div class="indcard">
+          <img src="images/travel spots/everest.webp" alt="">
+          <div class="gradient"></div>
+          <div class="ultloc">
+            <strong>Majestic <br> Mount Everest</strong>
+            <p class="mini">⭐ 4.7</p>
+          </div>
+        </div>
+
+        <div class="indcard">
+          <img src="images/travel spots/swiss.jpg" alt="">
+          <div class="gradient"></div>
+          <div class="ultloc">
+            <strong>Spectacular <br> Swiss Alps</strong>
+            <p class="mini">⭐ 4.7</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <hr>
+  </div>
+
+  <section class="gallery">
+    <div class="container py-4">
+      <h2 class="display-5 fw-bold heading pb-4">Gallery</h2>
+      <div class="myrow">
+        <img src="images/gallery/img11.jpeg" alt="" class="row1">
+        <img src="images/gallery/img14.webp" alt="" class="row1">
+        <img src="images/gallery/img13.jpg" alt="" class="row1">
+        <img src="images/gallery/img15.jpg" alt="" class="row1">
+        <img src="images/gallery/img12.jpg" alt="" class="row1">
+      </div>
+      <div class="gap"></div>
+      <div class="myrow pb-4">
+        <img src="images/gallery/img23.avif" alt="" class="row2">
+        <img src="images/gallery/img22.avif" alt="" class="row2">
+        <img src="images/gallery/img24.webp" alt="" class="row2">
+        <img src="images/gallery/img25.webp" alt="" class="row2">
+      </div>
+
+    </div>
+  </section>
+
+  <div class="container">
+    <hr>
+  </div>
+
+  <section class="contact">
+    <div class="container">
+      <div class="message-container">
+        <div class="row align-items-center px-5 pt-5 pt-lg-1 pb-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-5 fw-bold lh-1 mb-3 text-light">Journey Beyond Boundaries</h1>
+            <p class="col-lg-10 pb-3 fs-5 text-light">Discover the World's Wonders with Ease and Excitement</p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5 back">
+            <form class="p-md-4 rounded-4 bg-body-tertiary contactform mt-5 mb-1 p-4">
+              <div class="form-header pt-0 pb-3">
+                <strong>Contact us</strong>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingName" placeholder="">
+                <label for="floatingInput">Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="">
+                <label for="floatingInput">Email ID</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingSubject" placeholder="">
+                <label for="floatingSubject">Subject</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" id="floatingMessage" placeholder="" style="height: 150px;"></textarea>
+                <label for="floatingMessage">Message</label>
+              </div>
+
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="newsletter"> Subscribe to our newsletter
+                </label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="foot row mx-0 p-5 row-cols-1 row-cols-md-5">
+        <div class="col-12 col-md-4 mb-3">
+          <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img src="images/jetsetgo full logo.png" alt="" class="col-12 col-lg-8 mb-3">
+          </a>
+
+          <p class="text-body-primary pt-3 pb-3">India: <span class="newline-off">1800 890 1234 </span> <br>
+            Worldwide: <span class="newline-off">+91 987 654 3210 </span> <br>
+            Email: <span class="newline-off">support@jetsetgo.in</span></p>
+          <hr>
+          <h5 class="pt-md-4">Social</h5>
+          <div class="socials pb-4 pb-md-1">
+            <img src="images/socials/linkedin.png" alt="">
+            <img src="images/socials/instagram.png" alt="">
+            <img src="images/socials/facebook.png" alt="">
+            <img src="images/socials/youtube.png" alt="">
+          </div>
+        </div>
+
+        <div class="mb-3 col-4 col-md-2  d-none d-md-block ">
+          <h5>JetSetGo</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Investor Relations</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="mb-3 col-4 col-md-2 d-md-none">
+          <h5>JetSetGo</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Investor Relations</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+          </ul>
+          <br>
+          <h5>Important Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cheap Flights</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Flight Status</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Flight Offers</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Train Status</a></li>
+          </ul>
+        </div>
+
+        <div class="mb-3 col-4 col-md-2">
+          <h5>Product Offering</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FLights</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Book Hotels</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Book Online Cabs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trip Planner</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Holiday Packages</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Bus Service</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Book Online Trains</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Adventure Sports</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trip Ideas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-4 mb-3 col-md-2 d-none d-md-block">
+          <h5>Important Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cheap Flights</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Flight Status</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Flight Offers</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Train Status</a></li>
+          </ul>
+        </div>
+
+        <div class="mb-3 col-4 col-md-2">
+          <h5>Quick Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Flight to Delhi</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Flights to Chennai</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trains from Howrah</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Book Cabs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Hotels is Ooty</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Indian Railways</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Domestic Flights</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <section class="finalfooter">
+    <div class="container py-3">
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-5 my-4 border-top px-lg-5">
+        <p class="px-2">© 2021 JetSetGo Inc. All rights reserved</p>
+        <ul class="list-unstyled d-flex">
+          <li class="nav-item"><a href="#" class="nav-link px-2">Why JetSetGo?</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">Privacy policy</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">Terms of use</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">Cookie policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    /* $(".white > *").hover(function () {
+      alert($(this).attr("src"));
+    });*/
+    document.querySelectorAll('.type').forEach(typeElement => {
+      const img = typeElement.querySelector('img');
+      const text = typeElement.querySelector('.textc');
+
+      typeElement.addEventListener('mouseover', () => {
+        // Change image source
+        const src = img.getAttribute('src');
+        img.setAttribute('src', src.replace('blue', 'white'));
+
+        // Change text color
+        text.style.color = 'white';
+      });
+
+      typeElement.addEventListener('mouseout', () => {
+        // Revert image source
+        const src = img.getAttribute('src');
+        img.setAttribute('src', src.replace('white', 'blue'));
+
+        // Revert text color
+        text.style.color = 'rgb(28, 89, 150)';
+      });
+    });
+
+
+  </script>
+</body>
+
+</html>

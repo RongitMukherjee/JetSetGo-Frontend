@@ -73,7 +73,7 @@ document.querySelectorAll('.type').forEach(typeElement => {
     var source = $(this).text();
     if (source == "♡") {
       $(this).text("♥︎");
-      $(this).siblings(".hovertext-heart").text("Unike").css("right","29px");
+      $(this).siblings(".hovertext-heart").text("Unlike").css("right","28px");
     }
     else {
       $(this).text("♡");

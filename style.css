@@ -227,7 +227,7 @@
     flex-wrap: wrap;
     margin-bottom: 20px;
     text-align: left;
-    justify-content: space-between;
+    justify-content:space-between;
     padding: 10px;
     row-gap: 20px;
 }
@@ -314,6 +314,14 @@
     border-radius: 7px;
 }
 
+.vid {
+    width: 180px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7px;
+    display: none;
+}
+
 .mycard {
     display: flex;
     gap: 15px;
@@ -373,6 +381,13 @@
     flex: 1;
 }
 
+/* .slide-control {
+    position: absolute;
+    right: 13px;
+    bottom: -1400px;
+    cursor: pointer;
+} */
+
 .gap {
     height: 5px;
 }
@@ -428,4 +443,51 @@ body {
 .finalfooter{
     color: rgb(149, 149, 149);
     font-size: 13px;
+}
+
+.carousel-item > .row > div {
+    height: 12em;
+}
+
+@media (min-width: 992px) {
+    .carousel-item > .row > div {
+        height: 18em;
+    }
+}
+
+.carousel-item > .row > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.part2 > div {
+    cursor: pointer;
+}
+
+.part2 {
+    display: flex;
+    gap: 10px;
+}
+
+.hovertext-heart {
+    position: absolute;
+    top: 292px;
+    font-size: 12px;
+    right: 34px;
+    background-color: rgb(169, 169, 169);
+    color: white;
+    border-radius: 5px;
+    padding: 0px 2px 0px 2px;
+}
+
+.hovertext-share {
+    position: absolute;
+    top: 292px;
+    font-size: 12px;
+    right: 6px;
+    background-color: rgb(169, 169, 169);
+    color: white;
+    border-radius: 5px;
+    padding: 0px 2px 0px 2px;
 }

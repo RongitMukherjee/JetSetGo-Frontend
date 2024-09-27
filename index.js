@@ -96,3 +96,21 @@ document.querySelectorAll('.type').forEach(typeElement => {
   $(".share").mouseleave(function() {
     $(this).siblings(".hovertext-share").hide();
   })
+
+  import cities from './cities-name-list.js';
+
+  $(document).ready(function () {
+    const dropdownFrom = $('#dropdown-from');
+    const dropdownTo = $('#dropdown-to');
+    
+    cities.forEach(function(item) {
+      dropdownFrom.append($('<option></option>').val(item).text(item));
+      dropdownTo.append($('<option></option>').val(item).text(item));
+    });
+  });
+
+  // $('#dropdown-from').change(function() {
+  //   const dropdown = $('#dropdown-from');
+  //   $(".from > .loc").text(dropdown.val());
+  // })
+

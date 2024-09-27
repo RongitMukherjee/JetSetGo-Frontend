@@ -491,3 +491,13 @@ body {
     border-radius: 5px;
     padding: 0px 2px 0px 2px;
 }
+
+#dropdown-from, #dropdown-to {
+    width: 100%;
+    height: 70%;
+    background-color: rgb(18, 68, 119);
+    border: none;
+    font-size: 35px;
+    color: white;
+    outline: none;
+}

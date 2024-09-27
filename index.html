@@ -89,14 +89,20 @@
             <!--<div class="fromto">-->
             <div class="from col-md-5 col-lg-2">
               <p class="mini">From</p>
-              <p class="loc">Delhi </p>
-              <p class="mini airport">DEL, Delhi Airport India </p>
+              <select id="dropdown-from">
+                <option value="none">Select city</option>
+              </select>
+              <!-- <p class="loc">Delhi </p>
+              <p class="mini airport">DEL, Delhi Airport India </p> -->
             </div>
             <div class="vr"></div>
             <div class="to col-md-6 col-lg-2">
               <p class="mini">To</p>
-              <p class="loc">Mumbai </p>
-              <p class="mini airport">BOM, Chhatrapati Shivaji Maharaj International Airport India </p>
+              <select id="dropdown-to">
+                <option value="none">Select city</option>
+              </select>
+              <!-- <p class="loc">Mumbai </p>
+              <p class="mini airport">BOM, Chhatrapati Shivaji Maharaj International Airport India </p> -->
             </div>
             <div class="vr d-lg-block d-none"></div>
             <div class="dep">
@@ -133,7 +139,7 @@
 
               <div class="fare01">
                 <div class="fare11">
-                  <div class="fare111"><input type="radio" name="fare" id=""></div>
+                  <div class="fare111"><input type="radio" name="fare" id="" checked></div>
                   <div class="fare112"></div>
                 </div>
                 <div class="fare12">
@@ -808,7 +814,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="index.js"></script>
+  <script type="module" src="index.js"></script>
 </body>
 
 </html>
